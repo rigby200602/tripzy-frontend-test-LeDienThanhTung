@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FFFFFF;
-  --background: linear-gradient(to top, #F5F8FF 55%, #DBF5FF 55%);
+  --background: #ffffff;
+  --background: linear-gradient(to top, #f5f8ff 55%, #dbf5ff 55%);
+  --font-family: Nunito Sans, sans-serif;
 }
 
 body {
   margin: 0;
   height: 100vh;
   background: var(--background);
+  font-family: var(--font-family);
   font-family: Arial, Helvetica, sans-serif;
 }
