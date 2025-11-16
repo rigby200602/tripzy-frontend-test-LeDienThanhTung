@@ -2,8 +2,13 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
-      <h1 className="text-3xl font-bold">test</h1> 
+    <main className="flex flex-col items-center justify-between">
+      <div className="my-16">
+        <h1 className="text-[40px] font-semibold text-center">Travel Smarter, Not Harder</h1> 
+        <p className="text-lg font-normal text-center">
+          Make every trip effortless. Tripzy lets you book rides and plan journeys with ease
+        </p>
+      </div>
     </main>
   );
 }
