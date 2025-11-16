@@ -9,8 +9,9 @@ export default function Home() {
           Make every trip effortless. Tripzy lets you book rides and plan journeys with ease
         </p>
       </div>
-      <div className="bg-white rounded-2xl h-60 w-[75%] shadow-lg ">
-          
+      <div className="flex flex-col bg-white rounded-2xl h-60 w-[75%] shadow-lg">
+          <div className="flex rounded-2xl shadow-xl h-[30%]">
+          </div>
       </div>
     </main>
   );
