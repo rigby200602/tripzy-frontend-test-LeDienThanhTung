@@ -24,6 +24,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ## Tech Stack
 I'm currently using Nextjs, Reactjs
+
 For CSS, i am using TailwindCSS
 
 ## Learn More
