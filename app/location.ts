@@ -24,7 +24,11 @@ export const locations = [
     english_name: "New Zealand",
     code_state: "+64 - New Zealand",
   },
-  { short_code: "NU", english_name: "Niue", code_state: "+683 - Niue" },
+  { 
+    short_code: "NU", 
+    english_name: "Niue", 
+    code_state: "+683 - Niue"
+  },
   {
     short_code: "NF",
     english_name: "Norfolk Island",
