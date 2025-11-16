@@ -23,9 +23,11 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Tech Stack
-I'm currently using Nextjs, Reactjs
+I'm currently using Nextjs, Reactjs.
 
-For CSS, i am using TailwindCSS
+For CSS, i am using TailwindCSS.
+
+And by access to React Icons, we got a lot of icon so we can use in my project.
 
 ## Learn More
 
