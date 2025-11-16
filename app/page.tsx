@@ -6,7 +6,7 @@ export default function Home() {
     <div>
       <Header />
       <div className="flex flex-col items-center justify-between">
-        <div className="py-16 px-8">
+        <div className="my-10">
           <h1 className="text-[40px] text-[#121216] font-semibold text-center">
             Travel Smarter, Not Harder
           </h1>
