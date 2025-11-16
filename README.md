@@ -1,6 +1,10 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Called it Tripzy, a project which is a test for Avian Solutions.
+Called it Tripzy, a project which is a test for Avian Solutions. 
+
+Which interesting about this project is i, a new comer to Nextjs, doing this while learning about it, so i will need your feedback to be a better Dev. 
+
+Thank you for taking your time here and checking it for me! <3
 
 ## Getting Started
 
