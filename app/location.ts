@@ -4,7 +4,11 @@ export const locations = [
     english_name: "Moldova, Republic of",
     code_state: "+373 - Moldova, Republic of",
   },
-  { short_code: "MC", english_name: "Monaco", code_state: "+377 - Monaco" },
+  { 
+    short_code: "MC", 
+    english_name: "Monaco", 
+    code_state: "+377 - Monaco" 
+  },  
   {
     short_code: "AN",
     english_name: "Netherlands Antilles",
