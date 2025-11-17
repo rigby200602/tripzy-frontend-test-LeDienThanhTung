@@ -1,6 +1,6 @@
 import React from 'react'
 
-const item = [
+const items = [
     { 
         title: "Bus & Shuttle"
     },
