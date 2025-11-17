@@ -46,6 +46,8 @@ Those others are for specific CSS rules for each icon based on the "component".
 ```
 Then i am using map() to handle that array, to render each object in the array.
 
+And useState() to store the state of the activeTab.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
