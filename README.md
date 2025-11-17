@@ -35,6 +35,13 @@ And by access to [React Icons](https://react-icons.github.io/react-icons), we go
 
 ## Explanation
 
+In Tabs Component:
+
+```
+I created an Array of Objects to store data, which will help us to render each tab option 
+
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
