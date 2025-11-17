@@ -1,4 +1,6 @@
-import React from "react";
+'use client'
+
+import React, { useState } from "react";
 import { FaBusAlt, FaHotel } from "react-icons/fa";
 import { MdFlightTakeoff } from "react-icons/md";
 
@@ -30,6 +32,11 @@ const tabs = [
 ];
 
 const Tabs = () => {
+  const [activeTab, setActiveTab] = useState(1)
+  const handleClick = (id) => {
+    setActiveTab(id)
+    console.log("Active Tab ID:", id)
+  }
   return (
     <div className="flex flex-col bg-white rounded-2xl h-60 w-[75%] shadow-lg">
       <div className="flex rounded-2xl shadow-md h-[30%]">
@@ -44,6 +51,7 @@ const Tabs = () => {
                 : MdFlightTakeoff;
             return (
               <div
+                onClick={() => handleClick(tab.id)}
                 key={index}
                 className={`w-full flex m-2 rounded-xl ${tab.hoverBg}`}
               >
