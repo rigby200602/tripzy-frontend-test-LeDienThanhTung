@@ -28,7 +28,7 @@ const tabs = [
 
 const Tabs = () => {
   return (
-    <div className="flex w-full">
+    <div className="flex w-full cursor-pointer">
       {tabs.map((tab, index) => {
         const Component = tab.component === "FaBusAlt" ? FaBusAlt : 
         tab.component === "FaHotel" ? FaHotel : MdFlightTakeoff;
