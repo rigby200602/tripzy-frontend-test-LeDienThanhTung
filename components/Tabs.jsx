@@ -1,14 +1,21 @@
+import path from 'path'
 import React from 'react'
 
-const items = [
+const tabs = [
     { 
-        title: "Bus & Shuttle"
+        title: "Bus & Shuttle",
+        component: "FaBusAlt",
+        path: "react-icons/fa"
     },
     {
-        title: "Hotel & Accommodation"
+        title: "Hotel & Accommodation",
+        component: "FaHotel",
+        path: "react-icons/fa"
     },
     {
-        title: "Flight"
+        title: "Flight",
+        component: "MdFlightTakeoff",
+        path: "react-icons/md"
     }
 ]
 
