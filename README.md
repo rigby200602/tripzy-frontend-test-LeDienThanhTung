@@ -39,11 +39,14 @@ In Tabs Component:
 
 ```
 I created an Array of Objects to store data, which will help us to render each tab option.
+"id" is id for each tab.
 "tilte" for title of the service.
 "component" are the name of the icon component in React Icon i mentioned before.
 Those others are for specific CSS rules for each icon based on the "component".
 ```
 Then i am using map() to handle that array, to render each object in the array.
+
+And useState() to store the state of the activeTab.
 
 ## Learn More
 
