@@ -38,8 +38,10 @@ And by access to [React Icons](https://react-icons.github.io/react-icons), we go
 In Tabs Component:
 
 ```
-I created an Array of Objects to store data, which will help us to render each tab option 
-
+I created an Array of Objects to store data, which will help us to render each tab option.
+"tilte" for title of the service.
+"component" are the name of the icon component in React Icon i mentioned before.
+Those others are for specific CSS rules for each icon based on the "component".
 ```
 
 ## Learn More
