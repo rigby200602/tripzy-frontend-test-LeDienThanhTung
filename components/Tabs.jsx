@@ -32,6 +32,7 @@ const Tabs = () => {
       <div className="flex rounded-2xl shadow-md h-[30%]">
         <div className="flex w-full cursor-pointer">
           {tabs.map((tab, index) => {
+            // check which icon to use 
             const Component =
               tab.component === "FaBusAlt"
                 ? FaBusAlt
@@ -53,6 +54,9 @@ const Tabs = () => {
             );
           })}
         </div>
+      </div>
+      <div>
+        {/* Content for the selected tab can go here */}
       </div>
     </div>
   );
