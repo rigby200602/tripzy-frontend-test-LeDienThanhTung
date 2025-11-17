@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Header from "@/components/Header";
+import Tabs from "@/components/Tabs";
 
 export default function Home() {
   return (
@@ -16,7 +17,9 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col bg-white rounded-2xl h-60 w-[75%] shadow-lg">
-          <div className="flex rounded-2xl shadow-md h-[30%]"></div>
+          <div className="flex rounded-2xl shadow-md h-[30%]">
+            <Tabs/>
+          </div>
         </div>
       </div>
     </div>
