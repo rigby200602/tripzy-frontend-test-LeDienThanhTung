@@ -4,6 +4,7 @@ import { MdFlightTakeoff } from "react-icons/md";
 
 const tabs = [
   {
+    id: 1,
     title: "Bus & Shuttle",
     component: "FaBusAlt",
     backgroundColor: "bg-[#D3F3FF]",
@@ -11,6 +12,7 @@ const tabs = [
     hoverBg: "hover:bg-[#EBF9FF]",
   },
   {
+    id: 2,
     title: "Hotel & Accommodation",
     component: "FaHotel",
     backgroundColor: "bg-[#E8FBCC]",
@@ -18,6 +20,7 @@ const tabs = [
     hoverBg: "hover:bg-[#F4FFEB]",
   },
   {
+    id: 3,
     title: "Flight",
     component: "MdFlightTakeoff",
     backgroundColor: "bg-[#E1EDFE]",
