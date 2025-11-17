@@ -35,7 +35,6 @@ const Tabs = () => {
   const [activeTab, setActiveTab] = useState(1)
   const handleClick = (id) => {
     setActiveTab(id)
-    console.log("Active Tab ID:", id)
   }
   return (
     <div className="flex flex-col bg-white rounded-2xl h-60 w-[75%] shadow-lg">
@@ -66,8 +65,9 @@ const Tabs = () => {
           })}
         </div>
       </div>
-      <div>
+      <div className="flex justify-center items-center h-full">
         {/* Content for the selected tab can go here */}
+        {activeTab === 1 ? '' : <p className="text-[#767689] font-normal">No Data</p>}
       </div>
     </div>
   );
