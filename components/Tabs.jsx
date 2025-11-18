@@ -77,7 +77,7 @@ const Tabs = () => {
         {/* Content for the selected tab can go here */}
         {activeTab === 1 ? (
           <div className="grid grid-cols-3">
-            <div className="flex h-full w-full gap-2 mx-2">
+            <div className="flex h-full gap-2 mx-4 w-[40%]">
               <div className="flex-col">
                 <p className="font-medium text-[#65686F]">From</p>
                 <SearchBar />
