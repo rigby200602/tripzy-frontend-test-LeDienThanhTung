@@ -3,7 +3,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FaBusAlt, FaHotel } from "react-icons/fa";
 import { MdFlightTakeoff } from "react-icons/md";
-import  SearchBar  from "@/components/SearchBar"
+import SearchBar from "@/components/SearchBar";
+import { HiOutlineSwitchHorizontal } from "react-icons/hi";
 
 const tabs = [
   {
@@ -79,11 +80,16 @@ const Tabs = () => {
             <div className="flex h-full w-full gap-2 mx-2">
               <div className="flex-col">
                 <p className="font-medium text-[#65686F]">From</p>
-                <SearchBar/>
+                <SearchBar />
+              </div>
+              <div className="my-7">
+                <button className="border border-gray-500 rounded-full h-10 w-10 cursor-pointer">
+                  <HiOutlineSwitchHorizontal color="blue" size={20} className="mx-2"/>
+                </button>
               </div>
               <div className="flex-col">
                 <p className="font-medium text-[#65686F]">To</p>
-                <SearchBar/>
+                <SearchBar />
               </div>
             </div>
           </div>
