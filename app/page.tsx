@@ -16,8 +16,8 @@ export default function Home() {
             journeys with ease
           </p>
         </div>
-            <Tabs/>
-          </div>
-        </div>
+        <Tabs />
+      </div>
+    </div>
   );
 }
