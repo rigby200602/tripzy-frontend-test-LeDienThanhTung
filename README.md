@@ -48,6 +48,12 @@ Then i am using map() to handle that array, to render each object in the array.
 
 And useState() to store the state of the activeTab.
 
+After making the tabs, i will use conditional rendering to do the task you guys give me.
+
+Cause it is a static site now, so that will be save me a lot of time to do another task.
+
+When the activeTab has the same value as the tab value of "Bus & Shuttle".
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
