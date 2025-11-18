@@ -1,8 +1,9 @@
-'use client'
+"use client";
 
 import React, { useEffect, useRef, useState } from "react";
 import { FaBusAlt, FaHotel } from "react-icons/fa";
 import { MdFlightTakeoff } from "react-icons/md";
+import  SearchBar  from "@/components/SearchBar"
 
 const tabs = [
   {
@@ -32,10 +33,10 @@ const tabs = [
 ];
 
 const Tabs = () => {
-  const [activeTab, setActiveTab] = useState(1)
+  const [activeTab, setActiveTab] = useState(1);
   const handleClick = (id) => {
-    setActiveTab(id)
-  }
+    setActiveTab(id);
+  };
   // Set default active tab
   const defaultTab = useRef();
   useEffect(() => {
@@ -46,7 +47,7 @@ const Tabs = () => {
       <div className="flex rounded-2xl shadow-md h-[30%]">
         <div className="flex w-full">
           {tabs.map((tab, index) => {
-            // Check which icon to use 
+            // Check which icon to use
             const Component =
               tab.component === "FaBusAlt"
                 ? FaBusAlt
@@ -73,7 +74,22 @@ const Tabs = () => {
       </div>
       <div className="flex justify-center items-center h-full">
         {/* Content for the selected tab can go here */}
-        {activeTab === 1 ? '' : <p className="text-[#767689] font-normal">No Data</p>}
+        {activeTab === 1 ? (
+          <div className="grid grid-cols-3">
+            <div className="flex h-full w-full gap-2 mx-2">
+              <div className="flex-col">
+                <p className="font-medium text-[#65686F]">From</p>
+                <SearchBar/>
+              </div>
+              <div className="flex-col">
+                <p className="font-medium text-[#65686F]">To</p>
+                <SearchBar/>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <p className="text-[#767689] font-normal">No Data</p>
+        )}
       </div>
     </div>
   );
