@@ -1,10 +1,15 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+// add icon
 import { FaBusAlt, FaHotel } from "react-icons/fa";
 import { MdFlightTakeoff } from "react-icons/md";
-import SearchBar from "@/components/SearchBar";
 import { HiOutlineSwitchHorizontal } from "react-icons/hi";
+// add components
+import SearchBar from "@/components/SearchBar";
+import Button from "@/components/Button"
+
+
 
 const tabs = [
   {
@@ -44,7 +49,7 @@ const Tabs = () => {
     defaultTab.current.focus();
   }, []);
   return (
-    <div className="flex flex-col bg-white rounded-2xl h-60 w-[75%] shadow-lg">
+    <div className="flex flex-col bg-white rounded-2xl h-70 w-[75%] shadow-lg">
       <div className="flex rounded-2xl shadow-md h-[30%]">
         <div className="flex w-full">
           {tabs.map((tab, index) => {
@@ -76,21 +81,30 @@ const Tabs = () => {
       <div className="flex justify-center items-center h-full">
         {/* Content for the selected tab can go here */}
         {activeTab === 1 ? (
-          <div className="grid grid-cols-3">
-            <div className="flex h-full gap-2 mx-4 w-[40%]">
-              <div className="flex-col">
-                <p className="font-medium text-[#65686F]">From</p>
-                <SearchBar />
+          <div className="flex flex-col justify-center items-center">
+            <div className="grid grid-cols-3">
+              <div className="flex h-full gap-2 mx-4 w-[40%]">
+                <div className="flex-col">
+                  <p className="font-medium text-[#65686F]">From</p>
+                  <SearchBar />
+                </div>
+                <div className="my-7">
+                  <button className="border border-gray-500 rounded-full h-10 w-10 cursor-pointer">
+                    <HiOutlineSwitchHorizontal
+                      color="blue"
+                      size={20}
+                      className="mx-2"
+                    />
+                  </button>
+                </div>
+                <div className="flex-col">
+                  <p className="font-medium text-[#65686F]">To</p>
+                  <SearchBar />
+                </div>
               </div>
-              <div className="my-7">
-                <button className="border border-gray-500 rounded-full h-10 w-10 cursor-pointer">
-                  <HiOutlineSwitchHorizontal color="blue" size={20} className="mx-2"/>
-                </button>
-              </div>
-              <div className="flex-col">
-                <p className="font-medium text-[#65686F]">To</p>
-                <SearchBar />
-              </div>
+            </div>
+            <div>
+              <Button/>
             </div>
           </div>
         ) : (
