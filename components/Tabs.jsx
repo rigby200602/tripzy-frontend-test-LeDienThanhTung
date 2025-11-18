@@ -7,7 +7,7 @@ import { MdFlightTakeoff } from "react-icons/md";
 import { HiOutlineSwitchHorizontal } from "react-icons/hi";
 // add components
 import SearchBar from "@/components/SearchBar";
-import Button from "@/components/Button"
+import SubmitButton from "@/components/SubmitButton"
 
 
 
@@ -104,7 +104,7 @@ const Tabs = () => {
               </div>
             </div>
             <div>
-              <Button/>
+              <SubmitButton/>
             </div>
           </div>
         ) : (
