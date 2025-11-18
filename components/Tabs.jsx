@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaBusAlt, FaHotel } from "react-icons/fa";
 import { MdFlightTakeoff } from "react-icons/md";
 
@@ -11,7 +11,7 @@ const tabs = [
     component: "FaBusAlt",
     backgroundColor: "bg-[#D3F3FF]",
     textColor: "text-[#19C0FF] ",
-    hoverBg: "hover:bg-[#EBF9FF]",
+    activeBg: "focus:bg-[#EBF9FF]",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const tabs = [
     component: "FaHotel",
     backgroundColor: "bg-[#E8FBCC]",
     textColor: "text-[#447A11] ",
-    hoverBg: "hover:bg-[#F4FFEB]",
+    activeBg: "focus:bg-[#F4FFEB]",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const tabs = [
     component: "MdFlightTakeoff",
     backgroundColor: "bg-[#E1EDFE]",
     textColor: "text-[#5664E1] ",
-    hoverBg: "hover:bg-[#EBF4FF]",
+    activeBg: "focus:bg-[#EBF4FF]",
   },
 ];
 
@@ -36,10 +36,15 @@ const Tabs = () => {
   const handleClick = (id) => {
     setActiveTab(id)
   }
+  // Set default active tab
+  const defaultTab = useRef();
+  useEffect(() => {
+    defaultTab.current.focus();
+  }, []);
   return (
     <div className="flex flex-col bg-white rounded-2xl h-60 w-[75%] shadow-lg">
       <div className="flex rounded-2xl shadow-md h-[30%]">
-        <div className="flex w-full cursor-pointer">
+        <div className="flex w-full">
           {tabs.map((tab, index) => {
             // Check which icon to use 
             const Component =
@@ -49,10 +54,11 @@ const Tabs = () => {
                 ? FaHotel
                 : MdFlightTakeoff;
             return (
-              <div
+              <button
+                ref={index === 0 ? defaultTab : null}
                 onClick={() => handleClick(tab.id)}
                 key={index}
-                className={`w-full flex m-2 rounded-xl ${tab.hoverBg}`}
+                className={`w-full flex m-2 rounded-xl cursor-pointer outline-none ${tab.activeBg}`}
               >
                 <div
                   className={`rounded-full h-12 w-12 m-1 p-3 ${tab.backgroundColor}`}
@@ -60,7 +66,7 @@ const Tabs = () => {
                   <Component className={`text-2xl ${tab.textColor}`} />
                 </div>
                 <p className="font-medium my-auto text-center">{tab.title}</p>
-              </div>
+              </button>
             );
           })}
         </div>
