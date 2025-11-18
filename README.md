@@ -34,7 +34,7 @@ For CSS, i am using [TailwindCSS](https://tailwindcss.com).
 And by access to [React Icons](https://react-icons.github.io/react-icons), we got a lot of icon so we can use in my project.
 
 # Explanation
-## Tabs component
+  ## Tabs component
 In Tabs Component:
 
 ```
