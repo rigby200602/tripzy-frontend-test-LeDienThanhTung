@@ -6,7 +6,7 @@ Which interesting about this project is i, a new comer to Nextjs, doing this whi
 
 Thank you for taking your time here and checking it for me! <3
 
-## Getting Started
+# Getting Started
 
 First, run the development server:
 
@@ -26,15 +26,15 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Tech Stack
+# Tech Stack
 I'm currently using [Next.js](https://nextjs.org), [Reactjs](https://react.dev).
 
 For CSS, i am using [TailwindCSS](https://tailwindcss.com).
 
 And by access to [React Icons](https://react-icons.github.io/react-icons), we got a lot of icon so we can use in my project.
 
-## Explanation
-
+# Explanation
+  ## Tabs component
 In Tabs Component:
 
 ```
@@ -54,7 +54,7 @@ Cause it is a static site now, so that will be save me a lot of time to do anoth
 
 When the activeTab has the same value as the tab value of "Bus & Shuttle".
 
-## Learn More
+# Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -63,7 +63,7 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+# Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
